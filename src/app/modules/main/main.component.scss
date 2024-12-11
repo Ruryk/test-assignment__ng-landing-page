@@ -1,0 +1,44 @@
+@import "../../../styles/screen-media";
+
+:host {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 133px;
+
+  section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &--preview {
+  }
+
+  &--about {
+  }
+
+  &--register {
+    margin-bottom: 178.68px;
+  }
+
+  @media (max-width: $mediaWidthMD) {
+    gap: 85px;
+
+    &--register {
+      margin-bottom: 120px;
+    }
+  }
+
+  @media (max-width: $mediaWidthXS) {
+    gap: 61.8px;
+
+    &--register {
+      margin-bottom: 90.26px;
+    }
+  }
+}

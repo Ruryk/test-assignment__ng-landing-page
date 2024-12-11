@@ -1,0 +1,63 @@
+@import "../../../../styles/typography";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 670px;
+  margin: 0 45px;
+
+  .register--item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &.item-title {
+      @include font_T1;
+      margin-bottom: 55.9px;
+    }
+
+    &.item-input {
+      margin-bottom: 55.9px;
+
+      &:last-child {
+        margin-bottom: 46.7px;
+      }
+
+    }
+
+    &.item-link a {
+      @include font_P2_reg;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.item-action {
+
+    }
+
+    @media (max-width: $mediaWidthMD) {
+      &.item-title {
+        margin-bottom: 45px;
+      }
+
+      &.item-input {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: $mediaWidthXS) {
+      &.item-title {
+        margin-bottom: 38.7px;
+      }
+
+      &.item-input {
+        margin-bottom: 10.75px;
+      }
+    }
+  }
+}

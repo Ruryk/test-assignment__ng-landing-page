@@ -1,0 +1,9 @@
+@mixin primary-gradient() {
+  background: rgb(108,92,231);
+  background: linear-gradient(90deg, rgba(108,92,231,1) 0%, rgba(162,155,254,1) 100%);
+}
+
+@mixin primary-gradient_alpha() {
+  background: rgb(108,92,231);
+  background: linear-gradient(90deg, #6C5CE7 29.8%, #A29BFE 100%);
+}

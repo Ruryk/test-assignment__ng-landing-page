@@ -1,0 +1,25 @@
+<div class="register--item item-title">
+  Cadastro
+</div>
+
+<ng-container [formGroup]="formGroup">
+  <div class="register--item item-input">
+    <app-input formControlName="name" placeholder="nome 15"/>
+  </div>
+
+  <div class="register--item item-input">
+    <app-input formControlName="email" placeholder="email" type="email"/>
+  </div>
+
+  <div class="register--item item-input">
+    <app-input formControlName="password" placeholder="senha" type="password"/>
+  </div>
+</ng-container>
+
+<div class="register--item item-link">
+  <a routerLink="#">Já tem uma conta?</a>
+</div>
+
+<div class="register--item item-action">
+  <app-button [disabled]="!formGroup.valid" (click)="onRegister">Concluir</app-button>
+</div>

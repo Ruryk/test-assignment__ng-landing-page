@@ -1,0 +1,60 @@
+@import "../../../../styles/typography";
+@import "../../../../styles/mixins";
+
+:host {
+  @include primary-gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 50px 45px;
+  position: relative;
+  clip-path: polygon(100% 0%, 0% 0%, 0.00% 86.67%, 2.50% 86.75%, 5.00% 86.99%, 7.50% 87.39%, 10.00% 87.94%, 12.50% 88.62%, 15.00% 89.41%, 17.50% 90.31%, 20.00% 91.27%, 22.50% 92.29%, 25.00% 93.33%, 27.50% 94.38%, 30.00% 95.39%, 32.50% 96.36%, 35.00% 97.25%, 37.50% 98.05%, 40.00% 98.73%, 42.50% 99.27%, 45.00% 99.67%, 47.50% 99.92%, 50.00% 100.00%, 52.50% 99.92%, 55.00% 99.67%, 57.50% 99.27%, 60.00% 98.73%, 62.50% 98.05%, 65.00% 97.25%, 67.50% 96.36%, 70.00% 95.39%, 72.50% 94.38%, 75.00% 93.33%, 77.50% 92.29%, 80.00% 91.27%, 82.50% 90.31%, 85.00% 89.41%, 87.50% 88.62%, 90.00% 87.94%, 92.50% 87.39%, 95.00% 86.99%, 97.50% 86.75%, 100.00% 86.67%);
+
+  @media (max-width: $mediaWidthMD) {
+    gap: 61.8px;
+  }
+
+  @media (max-width: $mediaWidthXS) {
+    padding: 0 45px 40px 45px;
+  }
+}
+
+.preview--col {
+  display: flex;
+  flex-direction: column;
+  gap: 61.02px;
+  max-width: 640px;
+
+  .col-title {
+    @include font_H1;
+  }
+
+  .col-action {
+  }
+
+  @media (max-width: $mediaWidthMD) {
+    gap: 45px;
+  }
+
+  @media (max-width: $mediaWidthXS) {
+    gap: 30.5px;
+  }
+
+  &.col-image {
+    img {
+      max-width: 640px;
+
+      @media (max-width: $mediaWidthMD) {
+        max-width: 400px;
+        height: 400px;
+      }
+
+      @media (max-width: $mediaWidthXS) {
+        max-width: 240px;
+        height: 240px;
+      }
+    }
+  }
+}

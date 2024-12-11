@@ -1,0 +1,13 @@
+@import "../../../../styles/typography";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 45px;
+  max-width: 1280px;
+
+  .about--paragraph {
+    @include font_P1_reg;
+  }
+}

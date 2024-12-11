@@ -1,0 +1,7 @@
+<header class="header">
+  <nav class="header--nav">
+    @for (link of navigationList; track link.link) {
+      <a class="nav-link" [routerLink]="link.link">{{ link.label }}</a>
+    }
+  </nav>
+</header>
