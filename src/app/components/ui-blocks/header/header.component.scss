@@ -1,0 +1,76 @@
+@import "../../../../styles/typography";
+@import "../../../../styles/mixins";
+
+:host {
+  @include primary-gradient;
+  display: flex;
+  align-items: center;
+  padding: 22.5px;
+  justify-content: center;
+
+  @media (max-width: $mediaWidthMD) {
+    padding: 10px;
+  }
+
+  @media (max-width: $mediaWidthXS) {
+    padding: 0;
+  }
+}
+
+.header {
+  display: inline-flex;
+  height: 135px;
+
+  @media (max-width: $mediaWidthMD) {
+    height: 90px;
+  }
+
+  @media (max-width: $mediaWidthXS) {
+    height: 80px;
+  }
+
+  &--nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .nav-link {
+      position: relative;
+      @include font_T2;
+      text-decoration: none;
+
+      &:not(:last-child)::after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 5px;
+        border-radius: 20px;
+        background-color: var(--secondary);
+        top: 0;
+        right: -20px;
+
+        @media (max-width: $mediaWidthMD) {
+          width: 3px;
+          right: -12px;
+        }
+
+        @media (max-width: $mediaWidthXS) {
+          width: 2px;
+          right: -9px;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: $mediaWidthMD) {
+      gap: 20px;
+    }
+
+    @media (max-width: $mediaWidthXS) {
+      gap: 16px;
+    }
+  }
+}

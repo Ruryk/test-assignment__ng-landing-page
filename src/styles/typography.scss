@@ -1,0 +1,159 @@
+@import "screen-media";
+
+/** Headline */
+@mixin font_H1($color: var(--white)) {
+  font-family: "Lilita One", sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 100px !important;
+  line-height: 114.3px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 75px !important;
+    line-height: 80px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 50px !important;
+    line-height: 57.15px;
+  }
+}
+
+/** Titles */
+@mixin font_T1($color: var(--primary)) {
+  font-family: "Lilita One", sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 60px !important;
+  line-height: 68.58px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 45px !important;
+    line-height: 48px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 30px !important;
+    line-height: 34.29px;
+  }
+}
+
+@mixin font_T2($color: var(--secondary)) {
+  font-family: "Lilita One", sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 50px !important;
+  line-height: 57.15px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 34px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 20.57px;
+  }
+}
+
+/** Paragraph text */
+@mixin font_P1_reg($color: var(--primary)) {
+  font-family: "Lilita One", sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 50px !important;
+  line-height: 57.15px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 34px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 20.57px;
+  }
+}
+
+@mixin font_P2_reg($color: var(--primary)) {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 40px !important;
+  line-height: 60px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+}
+
+/** Buttons */
+@mixin font_B1($color: var(--light-gray)) {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 40px !important;
+  line-height: 60px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+}
+
+/** Inputs */
+@mixin font_Inp1($color: var(--light-gray)) {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 40px !important;
+  line-height: 60px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+}
+
+/** Summary */
+@mixin font_Sum1($color: var(--white)) {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 50px !important;
+  line-height: 75px;
+  color: $color;
+
+  @media screen and (max-width: $mediaWidthMD) {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mediaWidthXS) {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+}

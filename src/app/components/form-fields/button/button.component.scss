@@ -1,0 +1,33 @@
+@import "../../../../styles/typography";
+
+:host {
+  display: inline-block;
+}
+
+button.custom-button {
+  @include font_B1;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  padding: 8.5px 38.21px;
+  border: none;
+  cursor: pointer;
+  max-height: 67.5px;
+  transition: all 0.3s ease-in-out;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--gray);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  @media (max-width: $mediaWidthMD) {
+    max-height: 47.5px;
+  }
+
+  @media (max-width: $mediaWidthXSS) {
+    max-height: 33.75px;
+  }
+}
